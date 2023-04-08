@@ -2,15 +2,43 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body{
     display: grid;
     place-items: center;
+   
 }
 
 .container-product-preview-card{
     width: 90%;
     margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,350px);
+    grid-template-rows: repeat(2,1fr);
+    /* overflow: hidden; */
+}
+
+@media (min-width : 480px) {
+    .container-product-preview-card{
+        width: 40%;
+        grid-template-columns: repeat(2,400px);
+        grid-template-rows: 250px;
+    }
+    .product-parfum-description{
+        margin: 20px;
+        padding: 20px;
+        grid-area: 1 / 2 / 1 / span 2;
+    }
+    footer{
+        grid-area: 2 / 2;
+    }
+    
+}
+
+.oo{
+    width: 350px;
+    height: 250px;
 }

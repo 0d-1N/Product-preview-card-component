@@ -9,11 +9,14 @@
   </head>
   <body>
     <main class="container-product-preview-card">
-      <section class="main-section-product-preview-card">
-        <div class="product-parfum-article">
-        <picture>
-            <source media="(max-width: 412px)" srcset="image-product-mobile.jpg">
+        <div class="product-parfum-picture">
+          <picture>
+              <source media="(max-width: 412px)" srcset="images/image-product-mobile.jpg 300px" >
+              <source  media="(min-width: 418px)" srcset="images/image-product-desktop.jpg 400w">
+              <img  src="images/image-product-mobile.jpg" alt="">
         </picture>
+      </div>
+        <div class="product-parfum-description">
           <h4>PERFUME</h4>
           <h1>gabrielle essemce eau de parfum</h1>
           <p>
@@ -28,7 +31,7 @@
           </div>
           <button><img src="images/icon-cart.svg" alt="" />Add to Cart</button>
         </footer>
-      </section>
+     
     </main>
   </body>
 </html>
