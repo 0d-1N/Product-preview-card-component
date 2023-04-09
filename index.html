@@ -9,29 +9,33 @@
   </head>
   <body>
     <main class="container-product-preview-card">
-        <div class="product-parfum-picture">
-          <picture>
-              <source media="(max-width: 412px)" srcset="images/image-product-mobile.jpg 300px" >
-              <source  media="(min-width: 418px)" srcset="images/image-product-desktop.jpg 400w">
-              <img  src="images/image-product-mobile.jpg" alt="">
-        </picture>
+      <section>
+      <div class="product-parfum-picture">
+        <img
+          src="images/image-product-mobile.jpg"
+          srcset="
+            images/image-product-mobile.jpg 686w,
+            images/image-product-desktop.jpg 
+          "
+          alt=""
+        />
       </div>
-        <div class="product-parfum-description">
-          <h4>PERFUME</h4>
-          <h1>gabrielle essemce eau de parfum</h1>
-          <p>
-            A floral,solar and voluptuous interpretation composed by Olivier
-            Polge,Perfumer-Creator for the House of CHANEL.
-          </p>
-        </div>
-        <footer>
-          <div>
-            <data class="amount" value="149.99">$149.99</data>
-            <del><data class="deleted-price">$169.99</data></del>
-          </div>
-          <button><img src="images/icon-cart.svg" alt="" />Add to Cart</button>
-        </footer>
-     
+      <div class="product-parfum-description">
+        <h4>PERFUME</h4>
+        <h1>gabrielle essemce eau de parfum</h1>
+        <p>
+          A floral,solar and voluptuous interpretation composed by Olivier
+          Polge,Perfumer-Creator for the House of CHANEL.
+        </p>
+      </div>
+    </section>
     </main>
+    <footer class="flex-div">
+      <div>
+        <data class="amount" value="149.99">$149.99</data>
+        <del><data class="deleted-price">$169.99</data></del>
+      </div>
+      <button><img class="pp" src="images/icon-cart.svg" alt="" />Add to Cart</button>
+    </footer>
   </body>
 </html>
