@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 :root{
     --Dark-cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -15,55 +16,103 @@
     padding: 0;
     margin: 0;
     border: 1px solid red;
+ 
 }
 body{
+    background-color: var(--Cream) ;
     display: grid;
     place-items: center;
+    height: 100vh;
+    font-family: 'Fraunces', serif;
 }
+
 
 
 .container-product-preview-card{
-    width: 90%;
-    margin-top: 5px ;
-    display: grid;
-    place-items: center;
-    
+    width: 90%;   
+}
+section{
+    background-color: var(--White);
+
 }
 
-section .product-parfum-description{
-    padding: 10px;
-}
-
-.product-parfum-description h4{
+.product-parfum-description h3{
   color: var(--Dark-grayish-blue);
   letter-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.product-parfum-description h1{
+   white-space: pre-line;
+   text-transform: capitalize;
+   font-size: 30px;
+}
+
+.product-parfum-description p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: pre-line;
+    line-height: 20px;
+    color: var(--Dark-grayish-blue);
+}
+.product-parfum-description h3,h1,p{
+    padding: 10px 20px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-img{
+.footer-product-preview{
     width: 100%;
+    padding: 20px;
+   
+}
+.price-amount-product{
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.price-amount-product .amount{
+    font-size: 30px;
+    color: var(--Dark-cyan);
+}
+.price-amount-product .deleted-price{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+button{
+    background-color: unset;
+    border: unset;
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -ms-border-radius: 10px ;
+    -o-border-radius: 10px ;
+    color: var(--White);
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 700;
+
+    
+
+}
+.pp{
+ transform: translate(-5px,3px);
+ -webkit-transform: translate(-5px,3px);
+ -moz-transform: translate(-5px,3px);
+ -ms-transform: translate(-5px,3px);
+ -o-transform: translate(-5px,3px);
 }
 
+.image-product{
+    max-width:  100%;
+}
+@media (min-width:600px){
+    .image-product{
+        width: 300px;
+    }
+}
